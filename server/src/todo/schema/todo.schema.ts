@@ -7,7 +7,7 @@ export type TodoDocument = Todo & Document;
 export class Todo {
   @Prop({ required: true })
   title: string;
-  @Prop({ required: true })
+  @Prop({ default: '' })
   description: string;
   @Prop({ default: false })
   completed: boolean;
